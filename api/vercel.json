@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/generate.js",  // Path to your serverless function
+      "use": "@vercel/node"      // Runtime (Node.js)
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/generate",    // Public API endpoint
+      "dest": "/api/generate"    // Maps to the file above
+    }
+  ]
+}
